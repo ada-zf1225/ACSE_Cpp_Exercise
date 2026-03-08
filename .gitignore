@@ -1,6 +1,7 @@
 # Build artifacts
 /build/
 /cmake-build-*/
+/src/output/
 
 # IDE files
 .idea/
