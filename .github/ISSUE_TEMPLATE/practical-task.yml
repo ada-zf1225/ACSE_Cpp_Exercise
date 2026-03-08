@@ -1,0 +1,30 @@
+name: Practical Task
+description: Track one practical exercise or a scoped sub-task.
+title: "[Practical] "
+labels: ["type:feature", "area:exercise", "status:ready"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Which practical and what specific requirement is this task about?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Define objective done conditions.
+      placeholder: |
+        - [ ] Compiles
+        - [ ] Tests added/updated
+        - [ ] Exercise notes updated
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Design Notes
+      description: Any constraints, trade-offs, or references.

@@ -1,0 +1,13 @@
+# Build artifacts
+/build/
+/cmake-build-*/
+
+# IDE files
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log

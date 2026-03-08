@@ -1,0 +1,33 @@
+name: Bug Report
+description: Report a defect in code, test, or build process.
+title: "[Bug] "
+labels: ["type:bug", "priority:medium"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem Description
+      description: What is broken?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Exact steps and commands.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "OS, compiler version, CMake version"
