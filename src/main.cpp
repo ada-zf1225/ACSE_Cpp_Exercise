@@ -1,16 +1,20 @@
 #include <algorithm>
 #include <iostream>
-#include <string>
 #include <vector>
 
-int main() {
-  std::vector<std::string> cities = {
-      "Tokyo", "Berlin", "Rio", "Denver", "Helsinki", "Nairobi"};
+void processNumbers(std::vector<int>& numbers) {
+  numbers.erase(std::remove_if(numbers.begin(), numbers.end(),
+                               [](int value) { return value % 2 == 0; }),
+                numbers.end());
+  std::sort(numbers.begin(), numbers.end());
 
-  std::sort(cities.begin(), cities.end());
-
-  for (const auto &city : cities) {
-    std::cout << city << "\n";
+  for (const int value : numbers) {
+    std::cout << value << "\n";
   }
+}
+
+int main() {
+  std::vector<int> numbers = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+  processNumbers(numbers);
   return 0;
 }
